@@ -1,0 +1,89 @@
+<header class="prototype-header">
+  <h1>This site is a prototype. It&rsquo;s for demonstration purposes only.</h1>
+  <div class="field-auction-status field field-select">
+    <span class="label-text">Auction status</span>
+    <select name="auction-status" id="auction-status">
+      <optgroup label="vendor">
+        <option value="draft-vendors">Draft</option>
+        <option value="coming-soon-vendors">Coming soon</option>
+        <option value="please-update-your-profile-vendors">Please update your profile</option>
+        <option value="you-are-ineligible-to-bid-vendors">You are ineligible to bid</option>
+        <option value="place-a-bid-first-vendors">Place a bid (first)</option>
+        <option value="place-a-bid-reverse-vendors">Place a bid (reverse)</option>
+        <option value="youve-been-underbid-vendors">You&rsquo;ve been underbid</option>
+        <option value="bid-rejected-sealed-vendors">Bid rejected (sealed)</option>
+        <option value="bid-rejected-reverse-vendors">Bid rejected (reverse)</option>
+        <option value="bid-placed-sealed-vendors">Bid placed (sealed)</option>
+        <option value="bid-placed-reverse-vendors">Bid placed (reverse)</option>
+        <option value="ready-for-work-vendors">Ready for work</option>
+        <option value="work-in-progress-vendors">Work in progress</option>
+        <option value="delivery-past-due-vendors">Delivery past due</option>
+        <option value="pending-acceptance-vendors">Pending acceptance</option>
+        <option value="payment-url-needed-vendors">Payment URL needed</option>
+        <option value="pending-payment-vendors">Pending payment</option>
+        <option value="payment-confirmation-needed-vendors">Payment confirmation needed</option>
+        <option value="paid-vendors">Paid</option>
+        <option value="rejected-vendors">Rejected</option>
+        <option value="closed-didnt-win-vendors">Closed (didn&rsquo;t win)</option>
+      </optgroup>
+      <optgroup label="admin">
+        <option value="c2-approval-required-admins">C2 approval required</option>
+        <option value="pending-c2-approval-admins">Pending C2 approval</option>
+        <option value="ready-to-publish-admins">Ready to publish</option>
+        <option value="coming-soon-admins">Coming soon</option>
+        <option value="accepting-bids-no-bids-admins">Accepting bids (no bids)</option>
+        <option value="accepting-bids-bids-placed-admins">Accepting bids (bids placed)</option>
+        <option value="ready-for-work-admins">Ready for work</option>
+        <option value="work-in-progress-admins">Work in progress</option>
+        <option value="delivery-past-due-admins">Delivery past due</option>
+        <option value="acceptance-needed-admins">Acceptance needed</option>
+        <option value="pending-payment-url-admins">Pending payment URL</option>
+        <option value="pending-payment-from-18f-admins">Pending payment from 18F</option>
+        <option value="pending-payment-from-customer-admins">Pending payment from customer</option>
+        <option value="pending-payment-confirmation-admins">Pending payment confirmation</option>
+        <option value="paid-and-confirmed-admins">Paid and confirmed</option>
+        <option value="rejected-admins">Rejected</option>
+      </optgroup>
+      <optgroup label="everyone">
+        <option value="sign-in-to-place-a-bid">Sign in to place a bid</option>
+        <option value="closed">Closed</option>
+      </optgroup>
+    </select>
+  </div>
+  <div class="nav-user field field-select">
+    <label>
+      <span class="label-text">User</span>
+      <select>
+        <option value="admin">Admin</option>
+        <option value="vendor">Vendor</option>
+      </select>
+    </label>
+  </div>
+</header>
+<header class="site-header">
+  <div class="wrapper">
+    <h1 class="logo">
+      <a href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/images/logo/18F-Logo-Bright-L.png">
+        {{site.title}}
+        <span class="tagline">A marketplace for open source work</span>
+      </a>
+    </h1>
+    <nav class="site-header-nav">
+      <div class="signed-in">
+        <ul>
+          <li class="nav-my-account"><a href="{{site.baseurl}}/profile">Account</a></li>
+          <li class="nav-people"><a href="{{site.baseurl}}/people/admins">People</a></li>
+          <li class="nav-settings"><a href="{{site.baseurl}}/settings/customers">Settings</a></li>
+          <li class="nav-sign-out"><a class="a-sign-out" href="{{site.baseurl}}/">Sign out</a></li>
+        </ul>        
+      </div>
+      <div class="signed-out">
+        Use your <a href="https://github.com">GitHub</a> account to
+        <a class="a-sign-in" href="#">Sign in</a>
+        or
+        <a class="a-sign-up" href="{{site.baseurl}}/sign-up">Sign up</a>
+      </div>
+    </nav>
+  </div>
+</header>
