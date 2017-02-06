@@ -1,9 +1,25 @@
----
-excerpt: none
-permalink: /screener/
----
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% include head.html %}
+  <title>Screener</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+  <meta name="description" content="none">
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300|Source+Sans+Pro:200,300,300italic,400,400italic,600,600italic,900' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
+
+  <link rel="canonical" href="/screener/">
+  <link rel="alternate" type="application/rss+xml" title="Informed consent form" href="/feed.xml" />
+
+
+</head>
+
 <body class="no-js layout-index">
   <a class="a-skip-to-main" href="#main">Skip to main content</a>
   <main role="main" id="main" class="page">
@@ -25,8 +41,8 @@ permalink: /screener/
     
   </main>
 </body>
-<script type="text/javascript" src="{{site.baseurl}}/javascripts/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/javascripts/js.cookie.js"></script>
+<script type="text/javascript" src="/javascripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/javascripts/js.cookie.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     if (Cookies.get('gov-18f-research--screener--show') == undefined)
