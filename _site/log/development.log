@@ -1,0 +1,1285 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:28:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (28.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.5ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.0ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRejectedAtToAuctions (20160705175025)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mALTER TABLE "auctions" ADD "rejected_at" timestamp[0m
+  [1m[35mSQL (12.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160705175025"]]
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddC2ApprovedAtToAuctions (20160705175026)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "auctions" ADD "c2_approved_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160705175026"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddCustomerIdToAuctions (20160706014644)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "auctions" ADD "customer_id" integer[0m
+  [1m[35m (8.1ms)[0m  CREATE  INDEX  "index_auctions_on_customer_id" ON "auctions"  ("customer_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160706014644"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to RenameCapProposalUrlToC2ProposalUrl (20160706213658)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "auctions" RENAME COLUMN "cap_proposal_url" TO "c2_proposal_url"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160706213658"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to CreateSkills (20160711175740)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (11.8ms)[0m  CREATE TABLE "skills" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX  "index_skills_on_name" ON "skills"  ("name")[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "auctions_skills" ("auction_id" integer NOT NULL, "skill_id" integer NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160711175740"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to AddIndexOnAuctionResult (20160712234552)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_auctions_on_result" ON "auctions"  ("result")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160712234552"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to RenameCreditCardFormUrlToPaymentUrl (20160715201738)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" RENAME COLUMN "credit_card_form_url" TO "payment_url"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160715201738"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to ChangeC2ApprovedAtToC2ApprovalStatus (20160804230057)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.7ms)[0m  ALTER TABLE "auctions" ADD "c2_approval_status" integer DEFAULT 0 NOT NULL
+  [1m[36m (1.3ms)[0m  [1m      UPDATE auctions
+      SET c2_approval_status = 0
+      WHERE c2_approved_at IS NULL
+      AND c2_proposal_url = '';
+[0m
+  [1m[35m (0.4ms)[0m        UPDATE auctions
+      SET c2_approval_status = 2
+      WHERE c2_approved_at IS NULL
+      AND c2_proposal_url != '';
+
+  [1m[36m (0.2ms)[0m  [1m      UPDATE auctions
+      SET c2_approval_status = 3
+      WHERE c2_approved_at IS NOT NULL
+      AND c2_proposal_url != '';
+[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "auctions" DROP "c2_approved_at"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160804230057"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'auctions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'auctions_skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'bids'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'client_accounts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'customers'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'delayed_jobs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:28:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuctionsController#index as HTML
+  [1m[35mUser Load (33.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuction Load (1.7ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC[0m  [["published", 1]]
+  [1m[35mBid Load (17.8ms)[0m  SELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:28:58.515786') AND (ended_at > '2016-08-09 19:28:58.516222')[0m  [["published", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:28:58.535442')  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (1.1ms)
+  Rendered auctions/_title.html.erb (0.4ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (17.9ms)
+  Rendered auctions/_project_label.html.erb (0.6ms)
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (63.3ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (5.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.5ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (6.3ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (7.1ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.6ms)
+  Rendered auctions/_project_label.html.erb (0.2ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (7.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.2ms)
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (5.9ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (6.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_auctions_list.html.erb (129.0ms)
+  Rendered auctions/index.html.erb within layouts/application (179.3ms)
+  Rendered components/_disclaimer.erb (1.8ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.4ms)
+  Rendered components/_nav_header.erb (5.8ms)
+  Rendered application/_flashes.html.erb (0.4ms)
+  Rendered components/_footer.html.erb (1.2ms)
+Completed 200 OK in 3652ms (Views: 3443.6ms | ActiveRecord: 64.2ms)
+
+
+Started GET "/assets/application.self-fd9d458d995c96f7b294897984377da331849a25e3aefc455d02e909c3e1ea2a.css?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:29:02 -0400
+
+
+Started GET "/assets/favicon-69ed8e7688dee6852c16309cb9f7c58ec43560321d03fb7605874c792b23d02f.ico" for 127.0.0.1 at 2016-08-09 15:29:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:36:34 -0400
+Processing by AuctionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuction Load (0.3ms)[0m  SELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC  [["published", 1]]
+  [1m[36mBid Load (0.3ms)[0m  [1mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:36:34.630529') AND (ended_at > '2016-08-09 19:36:34.630718')  [["published", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:36:34.631796')[0m  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (5.1ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (4.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.0ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.1ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (4.0ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (5.7ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.0ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (5.0ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (4.2ms)
+  Rendered auctions/_auctions_list.html.erb (55.4ms)
+  Rendered auctions/index.html.erb within layouts/application (69.5ms)
+  Rendered components/_disclaimer.erb (0.8ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (3.1ms)
+  Rendered application/_flashes.html.erb (0.0ms)
+  Rendered components/_footer.html.erb (0.9ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 2.7ms)
+
+SyntaxError (/Users/andrewmaier/Sites/micropurchase/app/views/components/_footer.html.erb:14: syntax error, unexpected ')'
+..._to 'API Docs', api_doc_path, );@output_buffer.safe_append='...
+...                               ^
+/Users/andrewmaier/Sites/micropurchase/app/views/components/_footer.html.erb:15: syntax error, unexpected ')'
+...to 'Insights', insights_path, );@output_buffer.safe_append='...
+...                               ^
+/Users/andrewmaier/Sites/micropurchase/app/views/components/_footer.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/andrewmaier/Sites/micropurchase/app/views/components/_footer.html.erb:27: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/components/_footer.html.erb:14: syntax error, unexpected ')'
+  app/views/components/_footer.html.erb:15: syntax error, unexpected ')'
+  app/views/components/_footer.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/components/_footer.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:60:in `_app_views_layouts_application_html_erb___3023325720605641638_70196696403660'
+
+
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.4ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/andrewmaier/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+Processing by AuctionsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuction Load (0.3ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC[0m  [["published", 1]]
+  [1m[35mBid Load (0.3ms)[0m  SELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:36:43.359733') AND (ended_at > '2016-08-09 19:36:43.359922')[0m  [["published", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:36:43.361083')  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.4ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (5.9ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (5.7ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (5.0ms)
+  Rendered auctions/_auctions_list.html.erb (61.9ms)
+  Rendered auctions/index.html.erb within layouts/application (77.5ms)
+  Rendered components/_disclaimer.erb (1.6ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (5.3ms)
+  Rendered application/_flashes.html.erb (0.1ms)
+  Rendered components/_footer.html.erb (1.1ms)
+Completed 200 OK in 146ms (Views: 138.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-fd9d458d995c96f7b294897984377da331849a25e3aefc455d02e909c3e1ea2a.css?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:43 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/assets/favicon-69ed8e7688dee6852c16309cb9f7c58ec43560321d03fb7605874c792b23d02f.ico" for 127.0.0.1 at 2016-08-09 15:36:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:41:58 -0400
+Processing by AuctionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuction Load (0.3ms)[0m  SELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC  [["published", 1]]
+  [1m[36mBid Load (0.3ms)[0m  [1mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:41:58.513711') AND (ended_at > '2016-08-09 19:41:58.514029')  [["published", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:41:58.515510')[0m  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (5.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (4.9ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (5.2ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.5ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (6.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (5.4ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (4.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (5.3ms)
+  Rendered auctions/_auctions_list.html.erb (60.7ms)
+  Rendered auctions/index.html.erb within layouts/application (76.6ms)
+  Rendered components/_disclaimer.erb (1.2ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.2ms)
+  Rendered components/_nav_header.erb (5.6ms)
+  Rendered application/_flashes.html.erb (0.1ms)
+  Rendered components/_footer.html.erb (0.8ms)
+Completed 200 OK in 1679ms (Views: 1671.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/application.self-7a14a2cc9da659aff5e7e12cc3fbe0ef741aeb825a661cf774ca613145164f13.css?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:42:00 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:42:01 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:42:01 -0400
+
+
+Started GET "/assets/favicon-69ed8e7688dee6852c16309cb9f7c58ec43560321d03fb7605874c792b23d02f.ico" for 127.0.0.1 at 2016-08-09 15:42:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:43:11 -0400
+Processing by AuctionsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuction Load (0.3ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC[0m  [["published", 1]]
+  [1m[35mBid Load (0.3ms)[0m  SELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:43:11.128915') AND (ended_at > '2016-08-09 19:43:11.129107')[0m  [["published", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:43:11.137241')  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.5ms)
+  Rendered auctions/_project_label.html.erb (0.3ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (7.5ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (5.9ms)
+  Rendered auctions/_title.html.erb (0.4ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.0ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (7.4ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.6ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (6.4ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.4ms)
+  Rendered auctions/_project_label.html.erb (0.4ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (8.1ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (7.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (8.5ms)
+  Rendered auctions/_title.html.erb (0.3ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.9ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (10.1ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.6ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (9.9ms)
+  Rendered auctions/_title.html.erb (0.7ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (9.7ms)
+  Rendered auctions/_auctions_list.html.erb (91.6ms)
+  Rendered auctions/index.html.erb within layouts/application (122.3ms)
+  Rendered components/_disclaimer.erb (1.0ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.2ms)
+  Rendered components/_nav_header.erb (3.9ms)
+  Rendered application/_flashes.html.erb (0.0ms)
+  Rendered components/_footer.html.erb (0.7ms)
+Completed 200 OK in 1608ms (Views: 1597.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.self-26b17364688c3a5b5a0e64b9ff6862608dc9dd66b91f8bd51d7d5c5fd2dca535.css?body=1" for 127.0.0.1 at 2016-08-09 15:43:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:12 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:12 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:12 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:43:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:43:51 -0400
+Processing by AuctionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuction Load (0.4ms)[0m  SELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC  [["published", 1]]
+  [1m[36mBid Load (0.4ms)[0m  [1mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:43:51.948707') AND (ended_at > '2016-08-09 19:43:51.948888')  [["published", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:43:51.950981')[0m  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.6ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (8.0ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.5ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (6.3ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (7.8ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (5.9ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.9ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (7.3ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.8ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (6.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (5.4ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (4.9ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (4.3ms)
+  Rendered auctions/_auctions_list.html.erb (69.5ms)
+  Rendered auctions/index.html.erb within layouts/application (86.1ms)
+  Rendered components/_disclaimer.erb (0.9ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (3.3ms)
+  Rendered application/_flashes.html.erb (0.0ms)
+  Rendered components/_footer.html.erb (0.6ms)
+Completed 200 OK in 1431ms (Views: 1421.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.self-2c76b90da66e9f1bd5c8d7d090836abead8ea82cd77017817ad5972f701fbcb7.css?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:53 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:43:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:45:09 -0400
+Processing by AuctionsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuction Load (0.2ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC[0m  [["published", 1]]
+  [1m[35mBid Load (0.2ms)[0m  SELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:45:09.681963') AND (ended_at > '2016-08-09 19:45:09.682155')[0m  [["published", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:45:09.683288')  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (7.0ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (5.0ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.1ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (5.0ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.8ms)
+  Rendered auctions/_project_label.html.erb (0.3ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (7.2ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (2.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (7.1ms)
+  Rendered auctions/_title.html.erb (0.2ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.7ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (6.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (4.7ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (5.3ms)
+  Rendered auctions/_auctions_list.html.erb (65.9ms)
+  Rendered auctions/index.html.erb within layouts/application (80.9ms)
+  Rendered components/_disclaimer.erb (1.2ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (7.0ms)
+  Rendered application/_flashes.html.erb (0.0ms)
+  Rendered components/_footer.html.erb (0.9ms)
+Completed 200 OK in 1654ms (Views: 1647.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-802cfabfca7e2dccf5d983f9ffb021e63dfce3a076823c68652755275e2ddfb7.css?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:11 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:45:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-09 15:45:36 -0400
+Processing by AuctionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuction Load (0.2ms)[0m  SELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC  [["published", 1]]
+  [1m[36mBid Load (0.3ms)[0m  [1mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:45:36.233356') AND (ended_at > '2016-08-09 19:45:36.233543')  [["published", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:45:36.234614')[0m  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 1]]
+  Rendered auctions/_list_item.html.erb (5.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 3]]
+  Rendered auctions/_list_item.html.erb (4.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.1ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 5]]
+  Rendered auctions/_list_item.html.erb (5.9ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 7]]
+  Rendered auctions/_list_item.html.erb (4.2ms)
+  Rendered auctions/_title.html.erb (0.3ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 6]]
+  Rendered auctions/_list_item.html.erb (5.8ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 2]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.0ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 8]]
+  Rendered auctions/_list_item.html.erb (5.5ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.3ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 12]]
+  Rendered auctions/_list_item.html.erb (4.4ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 13]]
+  Rendered auctions/_list_item.html.erb (4.4ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.2ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 11]]
+  Rendered auctions/_list_item.html.erb (4.3ms)
+  Rendered auctions/_auctions_list.html.erb (57.8ms)
+  Rendered auctions/index.html.erb within layouts/application (72.2ms)
+  Rendered components/_disclaimer.erb (0.9ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (3.9ms)
+  Rendered application/_flashes.html.erb (0.1ms)
+  Rendered components/_footer.html.erb (0.7ms)
+Completed 200 OK in 1884ms (Views: 1877.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/d3.v3.min.self-b52d43418d9cd75c25ec96202b55a305fcf118655b94b578f03eee884b0804a3.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/application.self-18e55d09b40cfa9f46bbe56ba5c93abb96a62513fe8ad03d6f530d71d3caec56.css?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/deliveryDueAt.self-b311839dc60be3225184222488d363016a7459920cfb6dceb3b0f5854f10964a.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/selectize.self-044caa1b742f2d258a52c7baf83283a30523017a0541e885fe003c4d13e5d00a.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/selectizer.self-dec14c6de7792ded12d69008e9ac83e27f59cd658ddce03ec9490b7b3b1fa62b.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/application.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/uswds/us_flag_small-8a6f68dd8703ce4cb475c92fc1eefa84c41f4741ec4c6ca8403ef99b74b94d20.png" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/18F-Logo-2016-Blue-6710315924c9b82b3a0bbf41a40b953176c442dd7e0e5b63e69ce89c0ce8ad87.svg" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/utility.self-bb3003297403083a4788ed07ce5ca95ae786c2be11bb6e32f5ba8b0e45e2d105.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/auctionToggle.self-0c77e467b44cb7ea17595bddc15679153a18402ff6e239049bdb01a830ae0b82.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/sourcesanspro-regular-webfont-cb03c54300164fcc8b068bf1cd8b419e6f8eb5cb44d607f198be1997999cc488.woff2" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/sourcesanspro-light-webfont-7dc9968203233ab8b6b3605b290a4f70e9478f7db7277308c2faf38053e4e73d.woff2" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/sourcesanspro-italic-webfont-a3af3e978eab69d7cc2350a23ef8b4d7a5e5b098406cf6623fed9b2426d59d74.woff2" for 127.0.0.1 at 2016-08-09 15:45:38 -0400
+
+
+Started GET "/assets/sourcesanspro-bold-webfont-2517c2a8077acd9cee8170e5b1aaebb2001c3447ca77fd63e6c9f378b35052c0.woff2" for 127.0.0.1 at 2016-08-09 15:45:39 -0400
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2016-08-09 15:51:47 -0400
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2016-08-09 15:52:04 -0400
+Processing by AuctionsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuction Load (0.2ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC[0m  [["published", 1]]
+  [1m[35mBid Load (0.3ms)[0m  SELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:52:04.659024') AND (ended_at > '2016-08-09 19:52:04.659204')[0m  [["published", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:52:04.660731')  [["published", 1]]
+  Rendered components/_welcome_message.html.erb (0.2ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (0.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 10]]
+  Rendered auctions/_list_item.html.erb (4.6ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.4ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 4]]
+  Rendered auctions/_list_item.html.erb (6.0ms)
+  Rendered auctions/_title.html.erb (0.1ms)
+  Rendered auctions/_over_winning_bid_details.html.erb (1.0ms)
+  Rendered auctions/_project_label.html.erb (0.1ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 9]]
+  Rendered auctions/_list_item.html.erb (5.2ms)
+  Rendered auctions/_auctions_list.html.erb (18.2ms)
+  Rendered auctions/index.html.erb within layouts/application (37.8ms)
+  Rendered components/_disclaimer.erb (1.9ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (6.2ms)
+  Rendered application/_flashes.html.erb (0.1ms)
+  Rendered components/_footer.html.erb (0.9ms)
+Completed 200 OK in 1665ms (Views: 1659.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-1649293843ab196c44065342ab94b90a687a1c69d59e37b7d8c906d2299ac203.css?body=1" for 127.0.0.1 at 2016-08-09 15:52:06 -0400
+
+
+Started GET "/insights" for 127.0.0.1 at 2016-08-09 15:52:08 -0400
+Processing by InsightsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at < '2016-08-09 19:52:08.756037') AND (ended_at > '2016-08-09 19:52:08.756271')  [["published", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1 AND (started_at > '2016-08-09 19:52:08.757994')[0m  [["published", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."result" = $1 AND ("auctions"."accepted_at" IS NOT NULL)  [["result", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "auctions" WHERE "auctions"."result" = $1[0m  [["result", 2]]
+  [1m[35mSQL (16.5ms)[0m  SELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.767103') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 20]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mSQL (1.2ms)[0m  SELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.832941') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(DISTINCT "auctions"."id") FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.832941') AND ("bids"."id" IS NOT NULL)[0m  [["published", 1]]
+  [1m[35mSQL (0.9ms)[0m  SELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.844059') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(DISTINCT "auctions"."id") FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.844059') AND ("bids"."id" IS NOT NULL)[0m  [["published", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(DISTINCT "users"."id") FROM "users" LEFT OUTER JOIN "bids" ON "bids"."bidder_id" = "users"."id" WHERE ("bids"."bidder_id" IS NOT NULL)
+  [1m[36mAuction Load (0.3ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1[0m  [["published", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."published" = $1  [["published", 1]]
+  [1m[36mAuction Load (0.2ms)[0m  [1mSELECT "auctions".* FROM "auctions" WHERE "auctions"."result" = $1 AND ("auctions"."accepted_at" IS NOT NULL)[0m  [["result", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "auctions" WHERE "auctions"."result" = $1 AND ("auctions"."accepted_at" IS NOT NULL)  [["result", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.871172') AND ("bids"."id" IS NOT NULL)[0m  [["published", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(DISTINCT "auctions"."id") FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.871172') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.881827') AND ("bids"."id" IS NOT NULL)[0m  [["published", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(DISTINCT "auctions"."id") FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.881827') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."small_business" = $1[0m  [["small_business", "t"]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."sam_status" = $1  [["sam_status", 1]]
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(DISTINCT "auctions"."id") FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.899691') AND ("bids"."id" IS NOT NULL)[0m  [["published", 1]]
+  [1m[35mSQL (0.9ms)[0m  SELECT "auctions"."id" AS t0_r0, "auctions"."issue_url" AS t0_r1, "auctions"."start_price" AS t0_r2, "auctions"."started_at" AS t0_r3, "auctions"."ended_at" AS t0_r4, "auctions"."title" AS t0_r5, "auctions"."description" AS t0_r6, "auctions"."github_repo" AS t0_r7, "auctions"."published" AS t0_r8, "auctions"."created_at" AS t0_r9, "auctions"."updated_at" AS t0_r10, "auctions"."summary" AS t0_r11, "auctions"."delivery_due_at" AS t0_r12, "auctions"."notes" AS t0_r13, "auctions"."billable_to" AS t0_r14, "auctions"."result" AS t0_r15, "auctions"."type" AS t0_r16, "auctions"."delivery_url" AS t0_r17, "auctions"."c2_proposal_url" AS t0_r18, "auctions"."user_id" AS t0_r19, "auctions"."purchase_card" AS t0_r20, "auctions"."paid_at" AS t0_r21, "auctions"."accepted_at" AS t0_r22, "auctions"."rejected_at" AS t0_r23, "auctions"."customer_id" AS t0_r24, "auctions"."c2_approval_status" AS t0_r25, "bids"."id" AS t1_r0, "bids"."bidder_id" AS t1_r1, "bids"."auction_id" AS t1_r2, "bids"."amount" AS t1_r3, "bids"."created_at" AS t1_r4, "bids"."updated_at" AS t1_r5, "bids"."via" AS t1_r6, "users"."id" AS t2_r0, "users"."github_id" AS t2_r1, "users"."duns_number" AS t2_r2, "users"."name" AS t2_r3, "users"."created_at" AS t2_r4, "users"."updated_at" AS t2_r5, "users"."email" AS t2_r6, "users"."github_login" AS t2_r7, "users"."payment_url" AS t2_r8, "users"."sam_status" AS t2_r9, "users"."contracting_officer" AS t2_r10, "users"."small_business" AS t2_r11 FROM "auctions" LEFT OUTER JOIN "bids" ON "bids"."auction_id" = "auctions"."id" LEFT OUTER JOIN "bids" "bids_auctions_join" ON "bids_auctions_join"."auction_id" = "auctions"."id" LEFT OUTER JOIN "users" ON "users"."id" = "bids_auctions_join"."bidder_id" WHERE "auctions"."published" = $1 AND (delivery_due_at < '2016-08-09 19:52:08.899691') AND ("bids"."id" IS NOT NULL)  [["published", 1]]
+  Rendered insights/_hero_metric.html.erb (0.5ms)
+  Rendered insights/_hero_metric.html.erb (0.1ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.1ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.1ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  Rendered insights/_hero_metric.html.erb (0.0ms)
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  Rendered insights/index.html.erb within layouts/application (197.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered components/_disclaimer.erb (2.1ms)
+  Rendered components/_guest_nav_drawer.html.erb (0.1ms)
+  Rendered components/_nav_header.erb (7.0ms)
+  Rendered application/_flashes.html.erb (0.1ms)
+  Rendered components/_footer.html.erb (0.7ms)
+Completed 200 OK in 268ms (Views: 237.7ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/assets/c3.min.self-b45836971a028950141276480ee291c286c27ba2d5994bdc422275720e91eca1.js?body=1" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/assets/underscore-min.self-8c17561264389571750ac522c272868d7105cf5e3f8af4761d09489b631d177c.js?body=1" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/assets/insights/insights.self-b412a127b2b698b71d6707d788772c4a1857c34e99a8e985e77dc1ff7333a010.js?body=1" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/assets/insights/charts.self-e1c425d8dd4373573f4bdf2193c5bf9afab3dd066d9dded8cb56b3f139af99ff.js?body=1" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/assets/insights-bundle.self-23bd3314468d93c5f6dea05f97e3bb8dc60b4595d1ba3ff0dca24cc4aa6bda3b.js?body=1" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/auctions.json" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+
+
+Started GET "/api/v0/auctions" for 127.0.0.1 at 2016-08-09 15:52:09 -0400
+Processing by Api::V0::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."github_id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuction Load (0.3ms)[0m  SELECT "auctions".* FROM "auctions" WHERE "auctions"."published" = $1  ORDER BY ended_at DESC  [["published", 1]]
+  [1m[36mBid Load (0.3ms)[0m  [1mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" IN (1, 3, 5, 7, 6, 2, 8, 12, 13, 11, 10, 4, 9)[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 1]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 3]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 5]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 7]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 6]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 2]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 8]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 12]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 13]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 11]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 10]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC[0m  [["auction_id", 4]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "auctions_skills" ON "skills"."id" = "auctions_skills"."skill_id" WHERE "auctions_skills"."auction_id" = $1  ORDER BY "skills"."name" ASC  [["auction_id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 20]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+Completed 200 OK in 106ms (Views: 94.7ms | ActiveRecord: 5.7ms)

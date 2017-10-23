@@ -1,0 +1,29 @@
+# Site settings
+title: Informed consent form
+description:
+email:
+permalink: pretty
+author:
+  name: Andrew Maier
+  email: andrew.maier@gsa.gov
+
+github:
+  organization: 18F
+  repository: informed-consent-form
+  default_branch: 18f-pages
+
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- go
+- vendor
